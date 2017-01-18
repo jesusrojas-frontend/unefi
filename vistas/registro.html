@@ -1,0 +1,60 @@
+<div class="container formulario">
+  <h3 class="text-center">Registrarme</h3>
+  <p class="text-center">¿Ya tienes cuenta? <a href="#/ingresar">Inicia Sesión</a></p>
+  </br>
+  <form class="form-auth" ng-submit="registro(usuario)">
+    <div class="caja">
+
+      <div class="form-group col-md-6">
+        <div class="input-group">
+          <label>Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre" ng-model="usuario.nombre">
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label>Año</label>
+        <select name="" id="" class="form-control" ng-model="usuario.ano">
+          <option value="primero">1 año</option>
+          <option value="segundo">2 año</option>
+          <option value="tercero">3 año</option>
+          <option value="cuarto">4 año</option>
+          <option value="quinto">5 año</option>
+        </select>
+      </div>
+      <div class="form-group col-md-12">
+        <div class="form-group">
+          <label>Seccion</label>
+          <select name="" id="" class="form-control" ng-model="usuario.seccion">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+          <input type="email" class="form-control" placeholder="Correo Electrónico" ng-model="usuario.email">
+        </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+          <input type="password" class="form-control" placeholder="Contraseña" ng-model="usuario.password">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-danger">Registrarme</button>
+      </div>
+    </div>
+  </form>
+  <p ng-if="error">Error: <strong>{{ error }}</strong></p>
+
+</div>
+<div ng-include="'vistas/footer.html'"></div>

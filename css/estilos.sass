@@ -1,0 +1,289 @@
+$colorPrincipal: #87d324
+$colorSecundario: #49b9e9
+$colorTerciario: #f37221
+$fuenteTitulo: 'Gadugi'
+$fuente: 'Nirmala UI'
+
+/**------------------------------
+  *------ Nav ------
+  *------------------------------*/
+body
+  color: black
+.navbar
+  margin-bottom: 0
+.navbar-static-top
+  padding: 1em
+  background: $colorPrincipal
+  .navbar-brand
+    padding: 0
+    .dropdown-menu
+      margin-top: 1em
+  a
+    color: #4c505d
+  .nav-center
+    padding-left: 35%
+  .navbar-nav
+    text-transform: uppercase
+    font-family: $fuenteTitulo
+    li
+      a:hover,
+      a:focus
+        background-color: $colorPrincipal
+.avatar
+  width: 26px
+  border: 2px solid #fff
+.avatar-m
+  width: 36px
+  border: 2px solid #fff
+
+.perfil
+  color: $colorTerciario
+  text-transform: capitalize
+.separador
+  border-left: #d2d6db 1px solid
+  /*----------------------------------
+   * ------ Formulario ------
+   *--------------------------------*/
+.formulario
+  margin-top: 50px
+  padding-bottom: 4em
+  h2,
+  h3
+    font-weight: bold
+    color: $colorTerciario
+  .caja
+    border: 2px solid $colorPrincipal
+    border-radius: 15px
+    max-width: 800px
+    margin: 0 auto
+    padding: 2em 25px 25px 25px
+    label
+      font-weight: lighter
+    .form-control
+      background: #f4f4f4
+    h4
+      font-size: 20px
+      font-weight: bold
+.form-auth
+  width: 40%
+  margin: 0 auto
+  .btn
+    width: 100%
+    padding-top: 1em
+    padding-bottom: 1em
+.fa-cog
+  color: rgba(255, 255, 255, 0)
+  -webkit-text-stroke-width: .8px
+  -webkit-text-stroke-color: black
+/*------------------------------------
+ * ------ Cabecera ------
+ * ------------------------------------*/
+.btn
+  text-transform: uppercase
+  font-family: $fuenteTitulo
+/*------Cabecera activa ------*/
+.active
+  .cabecera
+    padding-top: 9em
+    background: $colorPrincipal
+    padding-bottom: 18em
+
+    h1
+      color: $colorTerciario
+      font-family: $fuente
+    h3
+      color: white
+      font-family: $fuente
+    .botones
+      padding-top: 3em
+      .separar
+        color: white
+        padding: 0 2em
+      .btn-ingresar
+        background: white
+        color: #132044
+        padding: 1em 3em
+      .btn-registrar
+        background: $colorSecundario
+        color: white
+        padding: 1em 3em
+  .nuestras-clases
+    padding-top: 2em
+    padding-bottom: 3em
+    background-color: $colorSecundario
+    h2
+      text-transform: uppercase
+      color: $colorTerciario
+      font-family: $fuenteTitulo
+    p
+      padding-top: 1em
+      color: white
+      font-family: $fuenteTitulo
+      font-size: 18px
+    .btn
+      margin-top: 2em
+      color: #4c505d
+      border: #4c505d solid 1px
+      padding: 1em 3em
+//------ Cabecera no activa ------
+.no-active
+  .cabecera
+    padding-top: 9em
+    background-color: $colorSecundario
+    padding-bottom: 7em
+    h3
+      color: $colorTerciario
+      text-transform: uppercase
+    li
+      list-style: none
+      padding-top: 20px
+      a:hover
+        text-decoration: none
+    .banner
+      .slider
+        .item
+          position: relative
+          left: 100%
+        .item.active
+          left: 0
+  .Clases
+    background: $colorTerciario
+    padding: 1em
+    h3
+      color: white
+/*-------------------------------------------------------
+ * ------ Profesores ------
+ * ---------------------------------------------------*/
+.profesores
+  background: $colorSecundario
+  h2
+    color: white
+  h3
+    color: white
+
+.list-group
+  width: 30%
+  float: left
+  position: relative
+  min-height: 1px
+  margin-right: 20px
+  background: #fff
+  .list-group-body
+    padding: 1em
+    h4
+      color: black
+    .row-picture
+      p
+        font-size: 10px
+    .btn
+      background: $colorPrincipal
+      color: white
+      width: 100%
+      padding-top: 1em
+      padding-bottom: 1em
+/*----------------------------------------------------
+ * ----------- Clases -----------
+ * -------------------------------------------------*/
+.clase
+  padding-top: 3em
+  background: $colorTerciario
+  color: white
+  padding-bottom: 10em
+  .chats
+    .tipo
+      color: #f7f7f7
+      border-radius: 15px 15px 0px 0px
+      font-weight: bolder
+      height: 30px
+      line-height: 30px
+      padding: 2px 10px
+      position: fixed
+      //right: 358px
+      right: 26.59%
+      top: 90px
+      background: black
+    .chat
+      position: fixed
+      top: 138px
+      padding-top: 1em
+      padding-right: 1em
+      color: white
+      background: black
+      border-radius: 0 0 15px 15px
+      overflow-y: scroll
+      height: 80%
+      width: 35%
+      form
+        .btn
+          margin-top: 1em
+          margin-bottom: 1em
+      li
+        list-style: none
+        img
+          margin-right: 1em
+  .descripcion
+    width: 67%
+    position: relative
+    .tipo
+      z-index: 1000
+      color: white
+      border-radius: 15px 15px 0px 0px
+      font-weight: bolder
+      height: 30px
+      line-height: 30px
+      padding: 2px 10px
+      position: absolute
+      left: 10px
+      top: -20px
+      background: $colorSecundario
+    .inform
+      padding: .5em 2em
+      background: $colorSecundario
+      position: relative
+      top: 25px
+      left: -5px
+      width: 100%
+      border-radius: 0 15px 15px 15px
+      h3
+        font-weight: bold
+      p
+        font-size: 20px
+      .information
+        font-size: 18px
+
+
+/*----------------------------------------------------
+ * ------ Footer ------
+ * -------------------------------------------------*/
+
+footer
+  background: $colorSecundario
+  padding-left: 3em
+  .sep
+    border-bottom: 1px solid white
+    padding-bottom: 3em
+  .copy
+    color: white
+    text-transform: uppercase
+    font-family: $fuenteTitulo
+    padding-top: 3em
+    padding-left: 25%
+  img
+    width: 80%
+    margin-left: 3em
+  ul
+    padding-top: 5em
+    padding-left: 2em
+    li
+      display: inline
+      list-style: none
+      padding: 1em
+      a
+        color: white
+        text-decoration: underline
+        text-transform: uppercase
+        transition: .3s
+        font-family: $fuenteTitulo
+
+      a:hover
+        color: $colorTerciario

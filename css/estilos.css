@@ -1,0 +1,284 @@
+/**------------------------------
+ *------ Nav ------
+ *------------------------------ */
+body {
+  color: black; }
+
+.navbar {
+  margin-bottom: 0; }
+
+.navbar-static-top {
+  padding: 1em;
+  background: #87d324; }
+  .navbar-static-top .navbar-brand {
+    padding: 0; }
+    .navbar-static-top .navbar-brand .dropdown-menu {
+      margin-top: 1em; }
+  .navbar-static-top a {
+    color: #4c505d; }
+  .navbar-static-top .nav-center {
+    padding-left: 35%; }
+  .navbar-static-top .navbar-nav {
+    text-transform: uppercase;
+    font-family: "Gadugi"; }
+    .navbar-static-top .navbar-nav li a:hover,
+    .navbar-static-top .navbar-nav li a:focus {
+      background-color: #87d324; }
+
+.avatar {
+  width: 26px;
+  border: 2px solid #fff; }
+
+.avatar-m {
+  width: 36px;
+  border: 2px solid #fff; }
+
+.perfil {
+  color: #f37221;
+  text-transform: capitalize; }
+
+.separador {
+  border-left: #d2d6db 1px solid;
+  /*----------------------------------
+   * ------ Formulario ------
+   *-------------------------------- */ }
+
+.formulario {
+  margin-top: 50px;
+  padding-bottom: 4em; }
+  .formulario h2,
+  .formulario h3 {
+    font-weight: bold;
+    color: #f37221; }
+  .formulario .caja {
+    border: 2px solid #87d324;
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2em 25px 25px 25px; }
+    .formulario .caja label {
+      font-weight: lighter; }
+    .formulario .caja .form-control {
+      background: #f4f4f4; }
+    .formulario .caja h4 {
+      font-size: 20px;
+      font-weight: bold; }
+
+.form-auth {
+  width: 40%;
+  margin: 0 auto; }
+  .form-auth .btn {
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+
+.fa-cog {
+  color: rgba(255, 255, 255, 0);
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: black; }
+
+/*------------------------------------
+ * ------ Cabecera ------
+ * ------------------------------------ */
+.btn {
+  text-transform: uppercase;
+  font-family: "Gadugi"; }
+
+/*------Cabecera activa ------ */
+.active .cabecera {
+  padding-top: 9em;
+  background: #87d324;
+  padding-bottom: 18em; }
+  .active .cabecera h1 {
+    color: #f37221;
+    font-family: "Nirmala UI"; }
+  .active .cabecera h3 {
+    color: white;
+    font-family: "Nirmala UI"; }
+  .active .cabecera .botones {
+    padding-top: 3em; }
+    .active .cabecera .botones .separar {
+      color: white;
+      padding: 0 2em; }
+    .active .cabecera .botones .btn-ingresar {
+      background: white;
+      color: #132044;
+      padding: 1em 3em; }
+    .active .cabecera .botones .btn-registrar {
+      background: #49b9e9;
+      color: white;
+      padding: 1em 3em; }
+.active .nuestras-clases {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  background-color: #49b9e9; }
+  .active .nuestras-clases h2 {
+    text-transform: uppercase;
+    color: #f37221;
+    font-family: "Gadugi"; }
+  .active .nuestras-clases p {
+    padding-top: 1em;
+    color: white;
+    font-family: "Gadugi";
+    font-size: 18px; }
+  .active .nuestras-clases .btn {
+    margin-top: 2em;
+    color: #4c505d;
+    border: #4c505d solid 1px;
+    padding: 1em 3em; }
+
+.no-active .cabecera {
+  padding-top: 9em;
+  background-color: #49b9e9;
+  padding-bottom: 7em; }
+  .no-active .cabecera h3 {
+    color: #f37221;
+    text-transform: uppercase; }
+  .no-active .cabecera li {
+    list-style: none;
+    padding-top: 20px; }
+    .no-active .cabecera li a:hover {
+      text-decoration: none; }
+  .no-active .cabecera .banner .slider .item {
+    position: relative;
+    left: 100%; }
+  .no-active .cabecera .banner .slider .item.active {
+    left: 0; }
+.no-active .Clases {
+  background: #f37221;
+  padding: 1em; }
+  .no-active .Clases h3 {
+    color: white; }
+
+/*-------------------------------------------------------
+ * ------ Profesores ------
+ * --------------------------------------------------- */
+.profesores {
+  background: #49b9e9; }
+  .profesores h2 {
+    color: white; }
+  .profesores h3 {
+    color: white; }
+
+.list-group {
+  width: 30%;
+  float: left;
+  position: relative;
+  min-height: 1px;
+  margin-right: 20px;
+  background: #fff; }
+  .list-group .list-group-body {
+    padding: 1em; }
+    .list-group .list-group-body h4 {
+      color: black; }
+    .list-group .list-group-body .row-picture p {
+      font-size: 10px; }
+    .list-group .list-group-body .btn {
+      background: #87d324;
+      color: white;
+      width: 100%;
+      padding-top: 1em;
+      padding-bottom: 1em; }
+
+/*----------------------------------------------------
+ * ----------- Clases -----------
+ * ------------------------------------------------- */
+.clase {
+  padding-top: 3em;
+  background: #f37221;
+  color: white;
+  padding-bottom: 10em; }
+  .clase .chats .tipo {
+    color: #f7f7f7;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bolder;
+    height: 30px;
+    line-height: 30px;
+    padding: 2px 10px;
+    position: fixed;
+    right: 26.59%;
+    top: 90px;
+    background: black; }
+  .clase .chats .chat {
+    position: fixed;
+    top: 138px;
+    padding-top: 1em;
+    padding-right: 1em;
+    color: white;
+    background: black;
+    border-radius: 0 0 15px 15px;
+    overflow-y: scroll;
+    height: 80%;
+    width: 35%; }
+    .clase .chats .chat form .btn {
+      margin-top: 1em;
+      margin-bottom: 1em; }
+    .clase .chats .chat li {
+      list-style: none; }
+      .clase .chats .chat li img {
+        margin-right: 1em; }
+  .clase .descripcion {
+    width: 67%;
+    position: relative; }
+    .clase .descripcion .tipo {
+      z-index: 1000;
+      color: white;
+      border-radius: 15px 15px 0px 0px;
+      font-weight: bolder;
+      height: 30px;
+      line-height: 30px;
+      padding: 2px 10px;
+      position: absolute;
+      left: 10px;
+      top: -20px;
+      background: #49b9e9; }
+    .clase .descripcion .inform {
+      padding: 0.5em 2em;
+      background: #49b9e9;
+      position: relative;
+      top: 25px;
+      left: -5px;
+      width: 100%;
+      border-radius: 0 15px 15px 15px; }
+      .clase .descripcion .inform h3 {
+        font-weight: bold; }
+      .clase .descripcion .inform p {
+        font-size: 20px; }
+      .clase .descripcion .inform .information {
+        font-size: 18px; }
+
+/*----------------------------------------------------
+ * ------ Footer ------
+ * ------------------------------------------------- */
+footer {
+  background: #49b9e9;
+  padding-left: 3em; }
+  footer .sep {
+    border-bottom: 1px solid white;
+    padding-bottom: 3em; }
+  footer .copy {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Gadugi";
+    padding-top: 3em;
+    padding-left: 25%; }
+  footer img {
+    width: 80%;
+    margin-left: 3em; }
+  footer ul {
+    padding-top: 5em;
+    padding-left: 2em; }
+    footer ul li {
+      display: inline;
+      list-style: none;
+      padding: 1em; }
+      footer ul li a {
+        color: white;
+        text-decoration: underline;
+        text-transform: uppercase;
+        transition: 0.3s;
+        font-family: "Gadugi"; }
+      footer ul li a:hover {
+        color: #f37221; }
+
+/*# sourceMappingURL=estilos.css.map */

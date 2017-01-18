@@ -1,0 +1,100 @@
+<div class="profesores">
+  <div class="container">
+    <h2>Publicar una clase</h2>
+    <a href="#/publicar">Publicar</a>
+    <br>
+    <hr>
+    <h3>{{materia.materia}} de 1<sup>ero</sup></h3>
+    <div class="col-md-12">
+      <div class="list-group" ng-repeat="cp in classPrimero">
+        <div class="list-group-header">
+          <img src="https://k08.kn3.net/D302E6B38.jpg" width="100%">
+        </div>
+        <div class="list-group-body">
+          <h4>{{cp.contenido.titulo}}</h4>
+          <div class="row-picture">
+            <img ng-src="{{cp.contenido.gravatar}}" class="avatar img-circle">
+            <p>{{cp.contenido.fecha | date: 'd/M/yyyy h:mm a'}}</p>
+          </div>
+          <div class="boton text-center">
+            <a ng-href="#/clase/{{cp.contenido.titulosin}}" class="btn">ver clase</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- Math de 1 -->
+    <h3>{{materia.materia}} de 2<sup>do</sup></h3>
+    <div class="col-md-12">
+      <div class="list-group" ng-repeat="cs in classSegundo">
+        <div class="list-group-header">
+          <img src="https://k08.kn3.net/D302E6B38.jpg" width="100%">
+        </div>
+        <div class="list-group-body">
+          <h4>{{cs.contenido.titulo}}</h4>
+          <div class="row-picture">
+            <img ng-src="{{cs.contenido.gravatar}}" class="avatar img-circle">
+            <p>{{cs.contenido.fecha | date: 'd/M/yyyy h:mm a'}}</p>
+          </div>
+          <div class="boton text-center">
+            <a ng-href="#/clase/{{cs.contenido.titulosin}}" class="btn">ver clase</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- Math de 2 -->
+    <h3>{{materia.materia}} de 3<sup>ero</sup></h3>
+    <div class="col-md-12">
+      <div class="list-group" ng-repeat="ct in classTercero">
+        <div class="list-group-header">
+          <img src="https://k08.kn3.net/D302E6B38.jpg" width="100%">
+        </div>
+        <div class="list-group-body">
+          <h4>{{ct.contenido.titulo}}</h4>
+          <div class="row-picture">
+            <img ng-src="{{ct.contenido.gravatar}}" class="avatar img-circle">
+            <p>{{ct.contenido.fecha | date: 'd/M/yyyy h:mm a'}}</p>
+          </div>
+          <div class="boton text-center">
+            <a ng-href="#/clase/{{ct.contenido.titulosin}}" class="btn">ver clase</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- Math de 3 -->
+    <h3>{{materia.materia}} de 4<sup>to</sup></h3>
+    <div class="col-md-12">
+      <div class="list-group" ng-repeat="cc in classCuarto">
+        <div class="list-group-header">
+          <img src="https://k08.kn3.net/D302E6B38.jpg" width="100%">
+        </div>
+        <div class="list-group-body">
+          <h4>{{cc.contenido.titulo}}</h4>
+          <div class="row-picture">
+            <img ng-src="{{cc.contenido.gravatar}}" class="avatar img-circle">
+            <p>{{cc.contenido.fecha | date: 'd/M/yyyy h:mm a'}}</p>
+          </div>
+          <div class="boton text-center">
+            <a ng-href="#/clase/{{cc.contenido.titulosin}}" class="btn">ver clase</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- Math de 1 -->
+    <h3>{{materia.materia}} de 5<sup>to</sup></h3>
+    <div class="col-md-12">
+      <div class="list-group" ng-repeat="cq in classQuinto">
+        <div class="list-group-header">
+          <img src="https://k08.kn3.net/D302E6B38.jpg" width="100%">
+        </div>
+        <div class="list-group-body">
+          <h4>{{cq.contenido.titulo}}</h4>
+          <div class="row-picture">
+            <img ng-src="{{cq.contenido.gravatar}}" class="avatar img-circle">
+            <p>{{cq.contenido.fecha | date: 'd/M/yyyy h:mm a'}}</p>
+          </div>
+          <div class="boton text-center">
+            <a ng-href="#/clase/{{cq.contenido.titulosin}}" class="btn">ver clase</a>
+          </div>
+        </div>
+      </div>
+    </div><!-- Math de 5 -->
+  </div>
+  <br>
+</div>
+<div ng-include="'vistas/footer.html'"></div>

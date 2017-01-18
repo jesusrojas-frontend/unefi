@@ -1,0 +1,60 @@
+<div class="container formulario">
+  <h3 class="text-center">Registro de profesores</h3>
+  <p class="text-center">¿Ya tienes cuenta como profesor? <a href="#/ingresar-profesor">Inicia Sesión</a></p>
+
+  </br>
+  <form class="form-auth" ng-submit="registro(profesor)">
+    <div class="caja">
+
+      <div class="form-group col-md-6">
+        <div class="input-group">
+          <label>Nombre</label>
+          <input type="text" class="form-control" placeholder="Nombre" ng-model="profesor.nombre" autofocus="">
+        </div>
+      </div>
+
+      <div class="form-group col-md-6">
+        <label>Materia a enseñar</label>
+        <select name="" id="" class="form-control" ng-model="profesor.materia">
+          <option value="Matematica">Matematica</option>
+          <option value="Fisica">Fisica</option>
+          <option value="Quimica">Quimica</option>
+          <option value="Biologia">Biologia</option>
+          <option value="Castellano">Castellano</option>
+          <option value="Ingles">Ingles</option>
+          <option value="Cs-tierra">Cs de la tierra</option>
+        </select>
+      </div>
+      <div class="form-group col-md-12">
+        <label>Año</label>
+        <select name="" id="" class="form-control" ng-model="profesor.ano">
+          <option value="primero">1 año</option>
+          <option value="segundo">2 año</option>
+          <option value="tercero">3 año</option>
+          <option value="cuarto">4 año</option>
+          <option value="quinto">5 año</option>
+        </select>
+      </div>
+      <div class="form-group col-md-12">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
+          <input type="email" class="form-control" placeholder="Correo Electrónico" ng-model="profesor.email" autocomplete="">
+        </div>
+      </div>
+
+      <div class="form-group col-md-12">
+        <div class="input-group">
+          <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
+          <input type="password" class="form-control" placeholder="Contraseña" ng-model="profesor.password">
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-danger">Registrarme</button>
+      </div>
+    </div>
+  </form>
+  <p ng-if="error">Error: <strong>{{ error }}</strong></p>
+
+</div>
+<div ng-include="'vistas/footer.html'"></div>

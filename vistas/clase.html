@@ -1,0 +1,34 @@
+<div class="clase">
+  <div class="container">
+    <div class="col-md-8 video">
+      <iframe width="100%" height="400" src="{{claseElegida.contenido.video}}" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="chats col-md-4">
+      <h3 class="tipo">Aportes</h3>
+      <div class="chat">
+        <ul class="chatbox">
+          <form ng-submit="addMessage()">
+            <input type="text" ng-model="message" class="form-control">
+            <input type="submit" class="btn btn-primary">
+          </form>
+          <!-- arrays are fully sortable and filterable -->
+          <li ng-repeat="message in messages | orderBy:orderBy | filter:searchText">
+            <blockquote>
+              <h4>  <img src="{{message.foto}}" class="avatar img-circle"alt="foto">{{ message.from }}</h4> <br><p>{{ message.content }}</p>
+
+            </blockquote>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 descripcion">
+      <h3 class="tipo">Descripcion</h3>
+      <div class="inform">
+        <h3>{{claseElegida.contenido.titulo}}</h3>
+        <hr>
+        <p>{{claseElegida.contenido.descripcion}}</p>
+        <p class="information"><img src="{{claseElegida.contenido.gravatar}}" alt="foto" class="avatar-m img-circle">&nbsp;{{claseElegida.contenido.nombre}}</p>
+      </div>
+    </div>
+  </div>
+</div>

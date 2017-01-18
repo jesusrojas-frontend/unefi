@@ -1,0 +1,80 @@
+<div class="container">
+  <h1>Publicar Clase</h1>
+  <br>
+  <form class="form-publicar" ng-submit="publicarClase(clase)">
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Título</label>
+        <input type="text" class="form-control" ng-model="clase.titulo" placeholder="Título de la clase">
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Año</label>
+        <select class="form-control" ng-model="clase.ano">
+          <option value="primero">1 año</option>
+          <option value="segundo">2 año</option>
+          <option value="tercer">3 año</option>
+          <option value="cuarto">4 año</option>
+          <option value="quinto">5 año</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Seccion</label>
+        <select class="form-control" ng-model="clase.seccion">
+          <option value="A">A</option>
+          <option value="B">B</option>
+          <option value="C">C</option>
+          <option value="D">D</option>
+          <option value="E">E</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Video</label>
+        <input type="url" class="form-control" ng-model="clase.video" placeholder="Url de video">
+        <p class="help-block">Sube el url del video.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Materia a enseñar</label>
+        <select name="" id="" class="form-control" ng-model="clase.materia">
+          <option value="Matematica">Matematica</option>
+          <option value="fisica">Fisica</option>
+          <option value="quimica">Quimica</option>
+          <option value="biologia">Biologia</option>
+          <option value="castellano">Castellano</option>
+          <option value="ingles">Ingles</option>
+          <option value="tierra">Cs de la tierra</option>
+        </select>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Título sin espacios</label>
+        <input type="text" class="form-control" ng-model="clase.titulosin" placeholder="Título de la clase sin espacios">
+        <p class="help-block">Aqui, en vez de espacios, vas a separar las palabras con un - .</p>
+      </div>
+    </div>
+    <div class=" col-md-6">
+      <div class="form-group">
+        <label>Captura</label>
+        <input type="url" class="form-control" ng-model="clase.imagen">
+        <p class="help-block">Sube aqui la url de la captura del video.</p>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label>Descripcion</label>
+        <textarea cols="30" ng-model="clase.descripcion" rows="3" class="form-control" placeholder="Descripción de la clase"></textarea>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-danger center-block">Publicar</button>
+  </form>
+
+</div>
+<div ng-include="'vistas/footer.html'"></div>

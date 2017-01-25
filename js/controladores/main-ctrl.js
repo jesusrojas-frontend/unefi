@@ -71,7 +71,7 @@ app.controller("MainCtrl",["$scope", "Auth","$window","$firebaseObject","$fireba
           }
        });
      });
-      
+
     }
   $scope.sesionIniciada = function () {
     var user = firebase.auth().currentUser;

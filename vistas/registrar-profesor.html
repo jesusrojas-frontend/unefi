@@ -1,60 +1,68 @@
-<div class="container formulario">
-  <h3 class="text-center">Registro de profesores</h3>
-  <p class="text-center">¿Ya tienes cuenta como profesor? <a href="#/ingresar-profesor">Inicia Sesión</a></p>
-
-  </br>
-  <form class="form-auth" ng-submit="registro(profesor)">
-    <div class="caja">
-
-      <div class="form-group col-md-6">
-        <div class="input-group">
-          <label>Nombre</label>
-          <input type="text" class="form-control" placeholder="Nombre" ng-model="profesor.nombre" autofocus="">
-        </div>
-      </div>
-
-      <div class="form-group col-md-6">
-        <label>Materia a enseñar</label>
-        <select name="" id="" class="form-control" ng-model="profesor.materia">
-          <option value="Matematica">Matematica</option>
-          <option value="Fisica">Fisica</option>
-          <option value="Quimica">Quimica</option>
-          <option value="Biologia">Biologia</option>
-          <option value="Castellano">Castellano</option>
-          <option value="Ingles">Ingles</option>
-          <option value="Cs-tierra">Cs de la tierra</option>
-        </select>
-      </div>
-      <div class="form-group col-md-12">
-        <label>Año</label>
-        <select name="" id="" class="form-control" ng-model="profesor.ano">
-          <option value="primero">1 año</option>
-          <option value="segundo">2 año</option>
-          <option value="tercero">3 año</option>
-          <option value="cuarto">4 año</option>
-          <option value="quinto">5 año</option>
-        </select>
-      </div>
-      <div class="form-group col-md-12">
-        <div class="input-group">
-          <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-          <input type="email" class="form-control" placeholder="Correo Electrónico" ng-model="profesor.email" autocomplete="">
-        </div>
-      </div>
-
-      <div class="form-group col-md-12">
-        <div class="input-group">
-          <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-          <input type="password" class="form-control" placeholder="Contraseña" ng-model="profesor.password">
-        </div>
-      </div>
-
-      <div class="text-center">
-        <button type="submit" class="btn btn-danger">Registrarme</button>
-      </div>
+<section class="ingresos">
+  <div class="row cajon">
+    <div class="col-lg-8">
+      <form name="sentMessage" ng-submit="registro(profesor)">
+          <div class="caja">
+            <h3 class="text-center">Registrarme</h3>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Nombre</label>
+                    <input type="text" class="form-control" placeholder="Nombre" ng-model="profesor.nombre" required>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                  <label>Materia a enseñar</label>
+                  <select name="" id="" class="form-control" ng-model="profesor.materia">
+                    <option value="Matematica">Matematica</option>
+                    <option value="Fisica">Fisica</option>
+                    <option value="Quimica">Quimica</option>
+                    <option value="Biologia">Biologia</option>
+                    <option value="Castellano">Castellano</option>
+                    <option value="Ingles">Ingles</option>
+                    <option value="Cs-tierra">Cs de la tierra</option>
+                  </select>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Año</label>
+                    <select name="" id="" class="form-control" ng-model="profesor.ano">
+                      <option value="primero">1 año</option>
+                      <option value="segundo">2 año</option>
+                      <option value="tercero">3 año</option>
+                      <option value="cuarto">4 año</option>
+                      <option value="quinto">5 año</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Correo Electronico</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model="profesor.email" required>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" ng-model="profesor.password" required>
+                </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <button type="submit" class="btn btn-success btn-lg">Enviar</button>
+                </div>
+            </div>
+          </div>
+      </form>
     </div>
-  </form>
+    <div class="ingresa">
+      <h2>¿Ya tienes cuenta como profesor?</h2>
+      <a href="ingresar.html" class="btn">Ingresa aqui</a>
+    </div>
+  </div>
   <p ng-if="error">Error: <strong>{{ error }}</strong></p>
-
-</div>
+</section>
 <div ng-include="'vistas/footer.html'"></div>

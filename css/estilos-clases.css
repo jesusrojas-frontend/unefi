@@ -1,0 +1,91 @@
+.clases {
+  background: #87d324; }
+  .clases .container-fluid {
+    margin-right: 0;
+    padding-right: 0; }
+  .clases .video {
+    padding-right: 0; }
+  .clases .chat {
+    background: black;
+    padding-top: 80px;
+    padding-right: 0;
+    position: fixed;
+    right: 0; }
+    .clases .chat .tipo {
+      background: #87d324;
+      position: absolute;
+      top: -20px;
+      left: 0;
+      width: 100%; }
+      .clases .chat .tipo h3 {
+        margin-left: 1em;
+        background: black;
+        width: 175px;
+        color: white;
+        padding: .5em 1em;
+        border-radius: 25px 25px 0 0;
+        position: relative;
+        bottom: -10px; }
+    .clases .chat .mensajes {
+      padding-top: 1em;
+      padding-right: 1em;
+      overflow-y: scroll;
+      color: white;
+      position: relative;
+      height: 76vh; }
+      .clases .chat .mensajes li {
+        list-style: none; }
+        .clases .chat .mensajes li .avatar {
+          width: 40px;
+          margin-right: 1em; }
+  .clases .descripcion {
+    background: #49b9e9;
+    margin-left: 2em;
+    width: 62.5%; }
+    .clases .descripcion .tipo {
+      background: #87d324;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
+      .clases .descripcion .tipo h3 {
+        margin-left: 1em;
+        background: #49b9e9;
+        width: 185px;
+        color: white;
+        padding: .5em 1em;
+        border-radius: 25px 25px 0 0;
+        position: relative;
+        bottom: -10px; }
+    .clases .descripcion .contenido {
+      padding-top: 6em;
+      padding-right: 1em;
+      color: white;
+      position: relative; }
+
+@media screen and (max-width: 1024px) {
+  .clases {
+    padding-bottom: 55%; }
+    .clases .chat {
+      border-radius: 0 0 0 25px; }
+      .clases .chat .mensajes {
+        height: 1000px; } }
+
+@media screen and (max-width: 768px) {
+  .clases .chat {
+    position: relative;
+    width: 97.5%;
+    border-radius: inherit; }
+    .clases .chat .mensajes {
+      height: inherit; }
+  .clases .descripcion {
+    margin-top: 51px;
+    width: 92%; }
+  .clases .video {
+    margin-top: 1em;
+    width: 98%;
+    height: 0;
+    padding-bottom: 53.43%;
+    padding-right: 2%; }
+    .clases .video iframe {
+      height: 100%; } }

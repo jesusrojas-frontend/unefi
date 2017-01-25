@@ -53,7 +53,7 @@ app.controller("Auten-Prof-Ctrl", function($scope, Auth, $window){
   $scope.registro = function (profesor) {
     $scope.error = null;
     Auth.registroProf(profesor).then(function () {
-      Auth.crearPerfil(profesore);
+      Auth.crearPerfil(profesor);
       console.log("Registrado exitosamente!");
       $scope.sesion(profesor);
     })

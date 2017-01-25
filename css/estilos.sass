@@ -1,289 +1,335 @@
 $colorPrincipal: #87d324
 $colorSecundario: #49b9e9
 $colorTerciario: #f37221
-$fuenteTitulo: 'Gadugi'
-$fuente: 'Nirmala UI'
-
-/**------------------------------
-  *------ Nav ------
-  *------------------------------*/
 body
-  color: black
-.navbar
-  margin-bottom: 0
-.navbar-static-top
-  padding: 1em
-  background: $colorPrincipal
-  .navbar-brand
-    padding: 0
-    .dropdown-menu
-      margin-top: 1em
-  a
-    color: #4c505d
-  .nav-center
-    padding-left: 35%
-  .navbar-nav
-    text-transform: uppercase
-    font-family: $fuenteTitulo
-    li
-      a:hover,
-      a:focus
-        background-color: $colorPrincipal
-.avatar
-  width: 26px
-  border: 2px solid #fff
-.avatar-m
-  width: 36px
-  border: 2px solid #fff
-
-.perfil
-  color: $colorTerciario
-  text-transform: capitalize
-.separador
-  border-left: #d2d6db 1px solid
-  /*----------------------------------
-   * ------ Formulario ------
-   *--------------------------------*/
-.formulario
-  margin-top: 50px
-  padding-bottom: 4em
-  h2,
-  h3
-    font-weight: bold
-    color: $colorTerciario
-  .caja
-    border: 2px solid $colorPrincipal
-    border-radius: 15px
-    max-width: 800px
-    margin: 0 auto
-    padding: 2em 25px 25px 25px
-    label
-      font-weight: lighter
-    .form-control
-      background: #f4f4f4
-    h4
-      font-size: 20px
-      font-weight: bold
-.form-auth
-  width: 40%
-  margin: 0 auto
-  .btn
-    width: 100%
-    padding-top: 1em
-    padding-bottom: 1em
-.fa-cog
-  color: rgba(255, 255, 255, 0)
-  -webkit-text-stroke-width: .8px
-  -webkit-text-stroke-color: black
-/*------------------------------------
- * ------ Cabecera ------
- * ------------------------------------*/
-.btn
-  text-transform: uppercase
-  font-family: $fuenteTitulo
-/*------Cabecera activa ------*/
-.active
-  .cabecera
-    padding-top: 9em
-    background: $colorPrincipal
-    padding-bottom: 18em
-
-    h1
-      color: $colorTerciario
-      font-family: $fuente
-    h3
-      color: white
-      font-family: $fuente
-    .botones
-      padding-top: 3em
-      .separar
-        color: white
-        padding: 0 2em
-      .btn-ingresar
-        background: white
-        color: #132044
-        padding: 1em 3em
-      .btn-registrar
-        background: $colorSecundario
-        color: white
-        padding: 1em 3em
-  .nuestras-clases
-    padding-top: 2em
-    padding-bottom: 3em
-    background-color: $colorSecundario
-    h2
-      text-transform: uppercase
-      color: $colorTerciario
-      font-family: $fuenteTitulo
-    p
-      padding-top: 1em
-      color: white
-      font-family: $fuenteTitulo
-      font-size: 18px
-    .btn
-      margin-top: 2em
-      color: #4c505d
-      border: #4c505d solid 1px
-      padding: 1em 3em
-//------ Cabecera no activa ------
-.no-active
-  .cabecera
-    padding-top: 9em
-    background-color: $colorSecundario
-    padding-bottom: 7em
-    h3
-      color: $colorTerciario
-      text-transform: uppercase
-    li
-      list-style: none
-      padding-top: 20px
-      a:hover
-        text-decoration: none
-    .banner
-      .slider
-        .item
-          position: relative
-          left: 100%
-        .item.active
-          left: 0
-  .Clases
-    background: $colorTerciario
-    padding: 1em
-    h3
-      color: white
-/*-------------------------------------------------------
- * ------ Profesores ------
- * ---------------------------------------------------*/
-.profesores
-  background: $colorSecundario
-  h2
-    color: white
-  h3
-    color: white
-
-.list-group
-  width: 30%
-  float: left
+  padding-top: 65px
   position: relative
-  min-height: 1px
-  margin-right: 20px
-  background: #fff
-  .list-group-body
-    padding: 1em
-    h4
-      color: black
-    .row-picture
-      p
-        font-size: 10px
-    .btn
-      background: $colorPrincipal
-      color: white
-      width: 100%
-      padding-top: 1em
-      padding-bottom: 1em
-/*----------------------------------------------------
- * ----------- Clases -----------
- * -------------------------------------------------*/
-.clase
-  padding-top: 3em
-  background: $colorTerciario
-  color: white
-  padding-bottom: 10em
-  .chats
-    .tipo
-      color: #f7f7f7
-      border-radius: 15px 15px 0px 0px
-      font-weight: bolder
-      height: 30px
-      line-height: 30px
-      padding: 2px 10px
-      position: fixed
-      //right: 358px
-      right: 26.59%
-      top: 90px
-      background: black
-    .chat
-      position: fixed
-      top: 138px
-      padding-top: 1em
-      padding-right: 1em
-      color: white
-      background: black
-      border-radius: 0 0 15px 15px
-      overflow-y: scroll
-      height: 80%
-      width: 35%
-      form
-        .btn
-          margin-top: 1em
-          margin-bottom: 1em
+h1,
+h2,
+h3,
+h4,
+h5
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+  font-weight: 700
+/* ---------------------------------
+ * ------ Nav ------
+ * ------------------------------*/
+
+.navbar
+  padding: .5em 0
+  background-color: $colorSecundario
+  .navbar-brand
+    color: #91eb1d
+    .naranja
+      color: #f46309
+  .navbar-brand:hover
+    color: #91eb1d
+  li
+    a
+      font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
+      text-transform: uppercase
+      font-weight: 700
+  .navbar-nav
+    .image-circulo
+      width: 20px
+    .dropdown-menu
       li
-        list-style: none
-        img
-          margin-right: 1em
-  .descripcion
-    width: 67%
-    position: relative
-    .tipo
-      z-index: 1000
-      color: white
-      border-radius: 15px 15px 0px 0px
-      font-weight: bolder
-      height: 30px
-      line-height: 30px
-      padding: 2px 10px
-      position: absolute
-      left: 10px
-      top: -20px
-      background: $colorSecundario
-    .inform
-      padding: .5em 2em
-      background: $colorSecundario
-      position: relative
-      top: 25px
-      left: -5px
-      width: 100%
-      border-radius: 0 15px 15px 15px
-      h3
-        font-weight: bold
-      p
-        font-size: 20px
-      .information
-        font-size: 18px
-
-
-/*----------------------------------------------------
- * ------ Footer ------
- * -------------------------------------------------*/
-
-footer
-  background: $colorSecundario
-  padding-left: 3em
-  .sep
-    border-bottom: 1px solid white
-    padding-bottom: 3em
-  .copy
-    color: white
-    text-transform: uppercase
-    font-family: $fuenteTitulo
-    padding-top: 3em
-    padding-left: 25%
-  img
-    width: 80%
-    margin-left: 3em
-  ul
-    padding-top: 5em
-    padding-left: 2em
+        a
+          color: black
     li
-      display: inline
-      list-style: none
-      padding: 1em
       a
         color: white
-        text-decoration: underline
-        text-transform: uppercase
         transition: .3s
-        font-family: $fuenteTitulo
-
+        border-bottom: 3px solid $colorSecundario
+    .active
+      a
+        background-color: $colorSecundario
+        border-bottom: 3px solid $colorPrincipal
+        color: #444242
       a:hover
-        color: $colorTerciario
+        background-color: $colorSecundario
+
+    a:hover,
+    a:focus
+      border-bottom: 3px solid $colorPrincipal
+/* ---------------------------------------
+ * ------ Header -----
+ * -------------------------------------*/
+header
+  .jumbotron
+    background-image: url(../img/bg-2.jpg)
+    padding: 10em
+    padding-bottom: 15em
+    background-color: none
+    background-repeat: no-repeat
+    background-attachment: scroll
+    background-position: center center
+    background-size: cover
+    filter: brightness(95%)
+    margin-bottom: 0
+    h1
+      color: #ff9100
+    .botones
+      padding-top: 1em
+    .btn
+      background: $colorSecundario
+      color: white
+      padding: 1em 2em
+/* -------------------------------------------
+ * ------ Ventajas ------
+ * --------------------------------------------*/
+section
+  .container
+    .section-heading
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 40px
+      margin-top: 0
+      margin-bottom: 15px
+      text-transform: uppercase
+.ventajas
+  //background: #eee
+  padding: 10em 0
+  .container
+    .section-heading
+      //color: $colorTerciario
+    .servicios__items
+      padding-top: 4em
+      .text-muted
+        //color: white
+/* -----------------------------------------------
+ * ------ Informaicon ------
+ * ---------------------------------------------*/
+.informacion
+  background-image: url('../img/background-4.jpg')
+  background-repeat: no-repeat
+  background-attachment: scroll
+  background-position: center center
+  background-size: cover
+  filter: brightness(95%)
+  padding: 8em 2em
+  position: relative
+  .sobre
+    position: absolute
+    top: 0
+    left: 0
+    width: 38%
+    background: $colorTerciario
+    height: 100%
+    opacity: .5
+  h3
+    padding-left: 25%
+  .cbp_tmtimeline:before
+    content: ''
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 3px
+    background: #afdcf8
+    left: 20%
+    margin-left: -6px
+.cbp_tmtimeline
+  margin: 30px 0 0 0
+  padding: 0
+  list-style: none
+  position: relative
+  li
+    position: relative
+    .cbp_tmtime
+      display: block
+      width: 25%
+      padding-right: 100px
+      position: absolute
+      span
+        display: block
+        text-align: right
+      span:first-child
+        font-size: 0.9em
+        color: #bdd0db
+      span:last-child
+        font-size: 2.9em
+        color: #3594cb
+  li:nth-child(odd)
+    .cbp_tmtime
+      span:last-child
+        color: #6cbfee
+  /* Right content */
+  li .cbp_tmlabel
+    margin: 0 0 15px 25%
+    color: black
+    padding: 2em
+    font-size: 1.2em
+    font-weight: 300
+    line-height: 1.4
+    position: relative
+    border-radius: 5px
+
+.cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel
+  //background: #6cbfee
+.cbp_tmtimeline > li .cbp_tmlabel h2
+  margin-top: 0px
+  padding: 0 0 10px 0
+  border-bottom: 1px solid rgba(255,255,255,0.4)
+/* The icons */
+.cbp_tmtimeline > li .fa
+  width: 40px
+  height: 40px
+  speak: none
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  font-size: 1.4em
+  line-height: 40px
+  -webkit-font-smoothing: antialiased
+  position: absolute
+  color: #fff
+  background: #46a4da
+  border-radius: 50%
+  box-shadow: 0 0 0 8px #afdcf8
+  text-align: center
+  left: 20%
+  top: 0
+  margin: 0 0 0 -25px
+.cbp_tmicon-phone:before
+  content: "\e000"
+.cbp_tmicon-screen:before
+  content: "\e001"
+.cbp_tmicon-mail:before
+  content: "\e002"
+.cbp_tmicon-earth:before
+  content: "\e003"
+/* Example Media Queries */
+@media screen and (max-width: 65.375em)
+  .cbp_tmtimeline > li .cbp_tmtime span:last-child
+    font-size: 1.5em
+@media screen and (max-width: 47.2em)
+  .cbp_tmtimeline > li .cbp_tmtime
+    width: 100%
+    position: relative
+    padding: 0 0 20px 0
+  .cbp_tmtimeline > li .cbp_tmtime span
+    text-align: left
+  .cbp_tmtimeline > li .cbp_tmlabel
+    padding: 1em
+    font-weight: 400
+    font-size: 95%
+  .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after
+    border-right-color: transparent
+    border-bottom-color: #6cbfee
+  .cbp_tmtimeline > li .cbp_tmicon
+    position: relative
+    float: right
+    left: auto
+    margin: -55px 5px 0 0px
+/* -----------------------------------------------------
+ * ------ Contacto ------
+ * --------------------------------------------------*/
+.contacto
+  padding: 8em 0
+  background: #eee
+  .floating-label-form-group
+    position: relative
+    margin-bottom: 0
+    padding-bottom: 0.5em
+    border-bottom: 1px solid #a7a7a7
+
+  .floating-label-form-group input,
+  .floating-label-form-group textarea
+    z-index: 1
+    position: relative
+    padding-right: 0
+    padding-left: 0
+    border: none
+    border-radius: 0
+    font-size: 1.5em
+    background: none
+    box-shadow: none !important
+    resize: none
+
+  .floating-label-form-group label
+    display: block
+    z-index: 0
+    position: relative
+    top: 2em
+    margin: 0
+    font-size: 0.85em
+    line-height: 1.764705882em
+    vertical-align: middle
+    vertical-align: baseline
+    opacity: 0
+    -webkit-transition: top 0.3s ease,opacity 0.3s ease
+    -moz-transition: top 0.3s ease,opacity 0.3s ease
+    -ms-transition: top 0.3s ease,opacity 0.3s ease
+    transition: top 0.3s ease,opacity 0.3s ease
+
+  .floating-label-form-group:not(:first-child)
+    padding-left: 14px
+    border-left: 1px solid #a7a7a7
+
+  .floating-label-form-group-with-value label
+    top: 0
+    opacity: 1
+
+  .floating-label-form-group-with-focus label
+    color: #18BC9C
+
+  form .row:first-child .floating-label-form-group
+    border-top: 1px solid #a7a7a7
+
+/* ---------------------------------------------------
+ * ------ Footer ------
+ * -------------------------------------------------*/
+footer
+  background: $colorPrincipal
+  .footer__header
+    padding: 4em 0
+    color: black
+    .social-bar
+      padding-top: 1em
+    .btn-social
+      display: block
+      background-color: #222
+      height: 40px
+      width: 40px
+      border-radius: 100%
+      font-size: 20px
+      line-height: 40px
+      color: #fff
+      outline: 0
+      -webkit-transition: all .3s
+      -moz-transition: all .3s
+      transition: all .3s
+    .btn-social:hover
+      background: $colorSecundario
+  .footer__footer
+    padding: 2em
+    background: $colorTerciario
+    color: white
+    a
+      color: $colorPrincipal
+
+@media screen and (max-width: 414px)
+  header
+    .jumbotron
+      padding: 3em 1em
+      h1
+        font-size: 30px
+      p
+        font-size: 15px
+      .btn
+        background: $colorSecundario
+        color: white
+        padding: .5em 1em
+        font-size: 15px
+  section
+    .container
+      .section-heading
+        font-size: 30px
+      h3
+        padding-left: 5%
+        font-size: 20px
+  .informacion
+    padding: 2em 2em
+  .contacto
+    padding: 2em 2em

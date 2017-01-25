@@ -1,0 +1,133 @@
+$colorPrincipal: #87d324
+$colorSecundario: #49b9e9
+$colorTerciario: #f37221
+body
+
+  //background: $colorPrincipal
+.ingresos
+  padding-top: 2em
+  padding-bottom: 3em
+  h3
+    color: $colorTerciario
+    text-transform: uppercase
+  .btn
+    margin-top: 1em
+    text-align: center
+    width: 100%
+    background-color: $colorPrincipal
+    border-radius: 0
+    border: none
+  .cajon
+    position: relative
+    background: $colorTerciario
+    width: 70%
+    height: 500px
+    left: 15%
+    padding: 1em 25px 25px 25px
+    .ingresa
+      top: 30%
+      position: absolute
+      right: 12.5%
+      width: 30%
+      color: white
+      .btn
+        color: white
+        padding: 1em 2em
+        font-size: 15px
+    .caja
+      position: absolute
+      width: 70%
+      top: 0
+      left: 0
+      background: $colorSecundario
+      padding: 2em 4em 1em 4em
+  .floating-label-form-group
+    position: relative
+    margin-bottom: 0
+    padding-bottom: 0.5em
+    border-bottom: 1px solid white
+
+    input,
+    textarea,
+    select
+      z-index: 1
+      position: relative
+      padding-right: 0
+      padding-left: 0
+      border: none
+      border-radius: 0
+      font-size: 1.5em
+      background: none
+      box-shadow: none !important
+      resize: none
+      color: white
+      option
+        background: $colorSecundario
+        color: white
+    label
+      display: block
+      z-index: 0
+      position: relative
+      margin: 0
+      font-size: 0.85em
+      line-height: 1.764705882em
+      vertical-align: middle
+      vertical-align: baseline
+      -webkit-transition: top 0.3s ease,opacity 0.3s ease
+      -moz-transition: top 0.3s ease,opacity 0.3s ease
+      -ms-transition: top 0.3s ease,opacity 0.3s ease
+      transition: top 0.3s ease,opacity 0.3s ease
+      color: $colorTerciario
+
+  .floating-label-form-group:not(:first-child)
+    padding-left: 14px
+    border-left: 1px solid #a7a7a7
+
+  .floating-label-form-group-with-value label
+    top: 0
+    opacity: 1
+
+  .floating-label-form-group-with-focus label
+    color: #18BC9C
+
+.ingresar
+  .cajon
+    .caja
+      top: 3em
+      left: 2em
+      width: 60%
+  .control-group
+    padding-top: 2em
+@media screen and (max-width: 1025px)
+  .ingresos
+    .cajon
+      width: 80%
+      left: 12.5%
+      .ingresa
+        right: 5%
+        width: 40%
+        text-align: center
+      .caja
+        width: 50%
+@media screen and (max-width: 415px)
+  .ingresos
+    .cajon
+      height: 800px
+      .ingresa
+        top: 550px
+        right: 5%
+        width: 90%
+        text-align: center
+      .caja
+        width: 100%
+        padding: 2em 2em
+        h3
+          text-align: center
+          font-size: 20px
+  .ingresar
+    .cajon
+      height: 700px
+      .caja
+        left: 0
+      .ingresa
+        top: 500px

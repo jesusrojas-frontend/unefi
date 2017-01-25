@@ -10,6 +10,14 @@ app.controller("NavCtrl",["$scope", "Auth","$window",
         // An error happened.
       });
   }
+  $scope.inicio = function (){
+    var ubicacion = $window.location.hash;
+    var resultado = null;
+    if(ubicacion == "#/"){
+      resultado = true;
+    }
+    return resultado;
+  }
   $scope.sesionIniciada = function () {
     var user = firebase.auth().currentUser;
       var resultado = null;

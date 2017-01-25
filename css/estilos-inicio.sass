@@ -1,0 +1,102 @@
+$colorPrincipal: #87d324
+$colorSecundario: #49b9e9
+$colorTerciario: #f37221
+/* ----------------------------------
+ * ------ Header ------
+ * -----------------------------------*/
+.no-active
+  header
+    background: $colorPrincipal
+    padding-bottom: 3em
+    h1
+      color: $colorTerciario
+    .iframe
+      height: 0
+      padding-bottom: 33.75%
+      position: relative
+      width: 60%
+      margin-left: 20%
+      iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+/* ----------------------------------------
+ * ------ Clase ------
+ * -------------------------------------*/
+.clase
+  background: $colorSecundario
+  padding-top: 4em
+  .clase__item
+    margin-top: 2em
+    .row__header
+      overflow: hidden
+      position: relative
+      .contenido
+        position: absolute
+        top: 2em
+        left: 2em
+        color: white
+        height: 100%
+        transition: .3s
+        .materia
+          position: absolute
+          bottom: 5em
+          background: $colorPrincipal
+          padding: .5em 2em
+        .fisica
+          background: #2a34be
+        .quimica
+          background: #ff8200
+        .biologia
+          background: #c960b9
+        .castellano
+          background: #30b5e6
+        .ingles
+          background: #8b2dde
+        .tierra
+          background: #eebb1f
+      .sobre-puesto
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(#f47221, 0.5)
+        opacity: 0
+        transition: .3s
+        h2
+          padding-top: 25%
+          padding-left: 28%
+          text-transform: uppercase
+          color: white
+      .sobre-puesto:hover
+        color: white
+        text-decoration: none
+    img
+      width: 100%
+      filter: brightness(80%)
+  .clase__item:hover
+    .row__header
+      .contenido
+        opacity: 0
+      .sobre-puesto
+        opacity: 1
+@media screen and (max-width: 1024px)
+  .no-active
+    header
+      .iframe
+        padding-bottom: 45%
+        width: 80%
+        margin-left: 10%
+  .clase
+    .clase__item
+      .sobre-puesto
+        position: absolute
+        bottom: 52px
+        left: 0
+        width: 100%
+        height: 100%
+        background: rgba(#f47221, 0.5)
+        opacity: 1

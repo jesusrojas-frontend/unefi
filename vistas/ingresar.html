@@ -1,36 +1,38 @@
-<div class="container formulario">
-  <h2 class="text-center">Bienvenido a Aprende Facil</h2>
-  <h3 class="text-center">Iniciar Sesión</h3>
+<section class="ingresos ingresar">
+  <div class="row cajon">
+    <div class="col-lg-8">
+      <form name="sentMessage" id="contactForm" ng-submit="sesion(usuario)">
+          <div class="caja">
+            <h3 class="text-center">Ingresar</h3>
 
-  </br>
-  <form class="form-auth" ng-submit="sesion(usuario)">
-    <div class="caja">
-      <h4 class="text-center">Con tu Email</h4>
-      <br>
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></div>
-          <input type="email" class="form-control" placeholder="Correo Electrónico" ng-model="usuario.email">
-        </div>
-      </div>
-
-      <div class="form-group">
-        <div class="input-group">
-          <div class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></div>
-          <input type="password" class="form-control" placeholder="Contraseña" ng-model="usuario.password">
-        </div>
-      </div>
-
-      <div class="text-center">
-        <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
-      </div>
-      <br>
-      <p class="text-center">¿Aún no tienes cuenta? <a href="#/registrar">Regístrate aquí</a></p>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Correo Electronico</label>
+                    <input type="email" class="form-control" placeholder="Email" ng-model="usuario.email" required>
+                </div>
+            </div>
+            <div class="row control-group">
+                <div class="form-group col-xs-12 floating-label-form-group controls">
+                    <label>Contraseña</label>
+                    <input type="password" class="form-control" placeholder="Contraseña" ng-model="usuario.password" required>
+                </div>
+            </div>
+            <br>
+            <div id="success"></div>
+            <div class="row">
+                <div class="form-group col-xs-12">
+                    <button type="submit" class="btn btn-success btn-lg">Ingresar</button>
+                </div>
+            </div>
+          </div>
+      </form>
     </div>
-
-  </form>
+    <div class="ingresa">
+      <h2>¿No tienes cuenta?</h2>
+      <a href="registrar.html" class="btn">Registrate aqui</a>
+    </div>
+  </div>
   <p ng-if="firebaseUser">Signed in user: <strong>{{ firebaseUser.uid }}</strong></p>
   <p ng-if="error">Error: <strong>{{ error }}</strong></p>
-
-</div>
+</section>
 <div ng-include="'vistas/footer.html'"></div>

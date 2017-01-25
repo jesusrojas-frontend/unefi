@@ -3,13 +3,12 @@
 app.controller("ClaseCtrl", function ($scope,$firebaseArray, $routeParams, $firebaseObject,$window,chatMessages,$sce) {
   var user = firebase.auth().currentUser;
   var clases = firebase.database().ref().child("clases");
-  var usuario = firebase.database().ref().child("usuarios");
+  //var usuario = firebase.database().ref().child("usuarios");
   var ubicacion = "#/profesores";
   var math = "";
   if($window.location.hash == ubicacion){
 
     var variable = firebase.database().ref().child("profesores");
-    console.log(variable);
     var vari = $firebaseObject(variable);
     vari.$loaded().then(function() {
      angular.forEach(vari, function(value, key) {
@@ -17,7 +16,6 @@ app.controller("ClaseCtrl", function ($scope,$firebaseArray, $routeParams, $fire
          console.log("Me gustas");
        }
        else {
-         //$window.location.hash = "/";
        }
      });
     });
@@ -158,22 +156,22 @@ app.controller("ClaseCtrl", function ($scope,$firebaseArray, $routeParams, $fire
     $window.location.hash = "/";
   }
   var claseId = $routeParams.claseId;
-  console.log($routeParams);
   if(claseId){
-    buscarAno();
-    console.log($scope.math);
+    //buscarAno();
+    //console.log($scope.math);
     $scope.claseElegida = obtenerClase(claseId, math);
     var claseElegidaArray = obtenerClaseArray(claseId, math);
     var location = "#/clase/"+claseId;
 
-    console.log($scope.claseElegida);
+    //console.log($scope.claseElegida);
     $scope.claseElegida.$loaded(function(){
-      console.log($scope.claseElegida.contenido.gravatar);
+      console.log($scope.claseElegida.contenido.video);
     })
   };
   function obtenerClase(claseId) {
-    console.log(claseId);
-    return $firebaseObject(math.child("Matematica").child(claseId));
+    //console.log(claseId);
+    math = firebase.database().ref().child("clases").child("quinto").child("Matematica");
+    return $firebaseObject(math.child(claseId));
   }
   function obtenerClaseArray(claseId) {
     var chats = math.child(claseId).child("contenido").child("chat");

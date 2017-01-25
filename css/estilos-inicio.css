@@ -1,0 +1,97 @@
+/* ----------------------------------
+ * ------ Header ------
+ * -----------------------------------*/
+.no-active header {
+  background: #87d324;
+  padding-bottom: 3em; }
+  .no-active header h1 {
+    color: #f37221; }
+  .no-active header .iframe {
+    height: 0;
+    padding-bottom: 33.75%;
+    position: relative;
+    width: 60%;
+    margin-left: 20%; }
+    .no-active header .iframe iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+/* ----------------------------------------
+ * ------ Clase ------
+ * -------------------------------------*/
+.clase {
+  background: #49b9e9;
+  padding-top: 4em; }
+  .clase .clase__item {
+    margin-top: 2em; }
+    .clase .clase__item .row__header {
+      overflow: hidden;
+      position: relative; }
+      .clase .clase__item .row__header .contenido {
+        position: absolute;
+        top: 2em;
+        left: 2em;
+        color: white;
+        height: 100%;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        .clase .clase__item .row__header .contenido .materia {
+          position: absolute;
+          bottom: 5em;
+          background: #87d324;
+          padding: .5em 2em; }
+        .clase .clase__item .row__header .contenido .fisica {
+          background: #2a34be; }
+        .clase .clase__item .row__header .contenido .quimica {
+          background: #ff8200; }
+        .clase .clase__item .row__header .contenido .biologia {
+          background: #c960b9; }
+        .clase .clase__item .row__header .contenido .castellano {
+          background: #30b5e6; }
+        .clase .clase__item .row__header .contenido .ingles {
+          background: #8b2dde; }
+        .clase .clase__item .row__header .contenido .tierra {
+          background: #eebb1f; }
+      .clase .clase__item .row__header .sobre-puesto {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(244, 114, 33, 0.5);
+        opacity: 0;
+        -webkit-transition: .3s;
+        transition: .3s; }
+        .clase .clase__item .row__header .sobre-puesto h2 {
+          padding-top: 25%;
+          padding-left: 28%;
+          text-transform: uppercase;
+          color: white; }
+      .clase .clase__item .row__header .sobre-puesto:hover {
+        color: white;
+        text-decoration: none; }
+    .clase .clase__item img {
+      width: 100%;
+      -webkit-filter: brightness(80%);
+              filter: brightness(80%); }
+  .clase .clase__item:hover .row__header .contenido {
+    opacity: 0; }
+  .clase .clase__item:hover .row__header .sobre-puesto {
+    opacity: 1; }
+
+@media screen and (max-width: 1024px) {
+  .no-active header .iframe {
+    padding-bottom: 45%;
+    width: 80%;
+    margin-left: 10%; }
+  .clase .clase__item .sobre-puesto {
+    position: absolute;
+    bottom: 52px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(244, 114, 33, 0.5);
+    opacity: 1; } }
